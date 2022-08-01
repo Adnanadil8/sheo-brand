@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 1.5em;
   font-size: 25px;
@@ -117,11 +123,12 @@ section.hero .down-arrow path {
 
 footer {
   background: lightgoldenrodyellow;
-  margin: 0;
+  margin: 20px;
   padding: 1em;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 footer .facebook a {
   color: blue;
@@ -290,6 +297,46 @@ section.hero svg.down-arrow path {
   .wrapper {
     width: 1200px;
     margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 720px) {
+  footer {
+    display: block;
+    background: lightgoldenrodyellow;
+    margin: 20px 0 20px 20px;
+    padding: 1em;
+    width: 100%;
+    height: 50%;
+  }
+  footer .facebook a {
+    color: blue;
+  }
+  footer .linkdn a {
+    color: blueviolet;
+  }
+  footer .ig a {
+    color: palevioletred;
+  }
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 2em;
+  }
+  footer ul li {
+    padding: 0.5rem;
+  }
+  footer .copywrite {
+    text-align: center;
+    font-family: "poppins", sans-serif;
+    font-size: 16px;
+  }
+  footer .copywrite .copy {
+    text-transform: capitalize;
+  }
+  footer .copywrite .copy span {
+    text-transform: uppercase;
   }
 }
 @-webkit-keyframes inease {

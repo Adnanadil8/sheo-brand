@@ -1,4 +1,10 @@
 // this is the body tag
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 1.5em;
     font-size: 25px;
@@ -137,9 +143,12 @@ section.hero {
 
 footer {
     background: lightgoldenrodyellow;
-    margin: 0;
+    margin: 20px;
     padding: 1em;
-    width: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 .facebook {
     a {
@@ -355,6 +364,63 @@ nav {
     .wrapper {
         width: 1200px;
         margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width:720px){
+    footer {
+        display: block;
+        background: lightgoldenrodyellow;
+        margin: 20px 0 20px 20px;
+        padding: 1em;
+        width: 100%;
+        height: 50%;
+       
+        
+    .facebook {
+        a {
+            color: blue;
+        }
+    }
+    
+    .linkdn {
+        a {
+            color: blueviolet;
+        }
+    }
+    
+    .ig {
+        a {
+            color: palevioletred;
+        }
+    }
+    
+        ul {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            margin: 0;
+            padding: 0 2em;
+    
+            li {
+                padding: .5rem;
+    
+            }
+        }
+    
+        .copywrite {
+            text-align: center;
+            font-family: 'poppins', sans-serif;
+            font-size: 16px;
+    
+            .copy {
+                text-transform: capitalize;
+    
+                span {
+                text-transform: uppercase;
+                }
+            }
+        }
     }
 }
 

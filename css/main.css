@@ -1,0 +1,333 @@
+body {
+  margin: 1.5em;
+  font-size: 25px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../images/revolt.jpg");
+  background-size: cover;
+  background-position-x: 20%;
+  background-position-y: 20%;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  -webkit-animation: inease 3s forwards;
+          animation: inease 3s forwards;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+}
+
+nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: white;
+  height: 100vh;
+  width: 50%;
+  z-index: 99;
+  text-transform: uppercase;
+  transform: translateX(100%);
+  transition: transform 0.8s ease-in-out;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 6em;
+}
+nav a {
+  color: black;
+  padding: 0.76em 2em;
+  display: block;
+}
+nav a:hover {
+  background: rgb(223, 216, 216);
+}
+
+.close {
+  float: right;
+  width: 1em;
+  margin: 2em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header svg {
+  width: 2em;
+  margin-top: -0.6em;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 2em;
+  line-height: 3.3rem;
+}
+
+.subhead {
+  font-size: 1.2em;
+}
+
+section.hero {
+  color: white;
+  height: 90vh;
+}
+section.hero .down-arrow {
+  stroke: white;
+  position: absolute;
+  bottom: 2em;
+  width: 0.5em;
+  -webkit-animation: infinitee 1s alternate infinite;
+          animation: infinitee 1s alternate infinite;
+}
+section.hero .down-arrow path {
+  fill: white;
+}
+
+.more-info img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 10em;
+}
+.more-info .title {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+.more-info .dscrp {
+  line-height: 1.5rem;
+}
+
+.open-nav {
+  transform: translateX(0);
+}
+
+footer {
+  background: lightgoldenrodyellow;
+  margin: 0;
+  padding: 1em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+footer .facebook a {
+  color: blue;
+}
+footer .linkdn a {
+  color: blueviolet;
+}
+footer .ig a {
+  color: palevioletred;
+}
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 2em;
+}
+footer ul li {
+  padding: 0.5rem;
+}
+footer .copywrite {
+  text-align: center;
+  font-family: "poppins", sans-serif;
+  font-size: 16px;
+}
+footer .copywrite .copy {
+  text-transform: capitalize;
+}
+footer .copywrite .copy span {
+  text-transform: uppercase;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("/images/branislav-sneaker.jpg");
+  background-size: cover;
+  background-position-x: 20%;
+  background-position-y: 20%;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  -webkit-animation: inease 3s forwards;
+          animation: inease 3s forwards;
+}
+
+.hero-image {
+  left: unset;
+  right: 0;
+  width: 50%;
+  height: 30em;
+}
+
+.logo {
+  color: black;
+}
+.logo span {
+  color: red;
+}
+
+section.hero {
+  color: black;
+  height: auto;
+  width: 40%;
+  margin-bottom: 8em;
+}
+section.hero svg.down-arrow {
+  stroke: black;
+  position: unset;
+}
+section.hero svg.down-arrow path {
+  fill: black;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    margin: 1.5em 5em;
+    font-size: 20px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  }
+}
+@media only screen and (min-width: 920px) {
+  .menu {
+    display: none;
+  }
+  nav {
+    transform: translatex(0);
+    position: unset;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+  nav svg.close {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    margin: 0;
+  }
+  nav a {
+    color: white;
+    padding: 0.5em 1.5em;
+    font-size: 0.8em;
+  }
+  nav a:hover {
+    color: aqua;
+    background: none;
+    text-decoration: underline;
+  }
+  .hero-img {
+    left: unset;
+    right: 0;
+    width: 50%;
+    height: 30em;
+  }
+  .logo {
+    color: black;
+  }
+  .logo span {
+    color: red;
+  }
+  section.hero {
+    color: black;
+    height: auto;
+    width: 40%;
+    margin-bottom: 8em;
+  }
+  section.hero svg.down-arrow {
+    stroke: black;
+    position: unset;
+  }
+  section.hero svg.down-arrow path {
+    fill: black;
+  }
+  .more-info {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 4em;
+    margin-bottom: 8em;
+  }
+  .more-info img {
+    padding: 2em;
+    float: right;
+    width: 15em;
+    height: 50%;
+  }
+}
+.hero-imgs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("/images/craig-player.jpg");
+  background-size: cover;
+  background-position-x: 20%;
+  background-position-y: 20%;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  -webkit-animation: inease 3s forwards;
+          animation: inease 3s forwards;
+}
+
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@-webkit-keyframes inease {
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+@keyframes inease {
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+@-webkit-keyframes infinitee {
+  from {
+    transform: translateY(-30px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes infinitee {
+  from {
+    transform: translateY(-30px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.close-nav {
+  transform: translateX(0);
+}/*# sourceMappingURL=main.css.map */

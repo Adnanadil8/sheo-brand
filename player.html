@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players</title>
+    <!-- <link rel="stylesheet" href="/css/main.css"> -->
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div class="hero-imgs"></div>
+    <div class="wrapper">
+        <header>
+            <a href="#" class="logo">
+                Shoe<span>Brand</span>
+            </a>
+    
+    
+            <nav>
+                <svg class="close" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 30L30 2M30 30L2 2" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sneaker.html">Sneakers</a></li>
+                    <li><a href="player.html">Players</a></li>
+                </ul>
+            </nav>
+            <svg class="menu" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z"
+                    fill="white" />
+            </svg>
+        </header>
+    </div>
+    <!-- first section-->
+    <section class="hero">
+        <h1>Players favirote shoes.</h1>
+        <p class="subhead"> Shoes that give the players comfort to play on the court.</p>
+        <!-- svg file arrow-->
+        <svg class="down-arrow" viewBox="0 0 16 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M7.29289 131.707C7.68341 132.098 8.31658 132.098 8.7071 131.707L15.0711 125.343C15.4616 124.953 15.4616 124.319 15.0711 123.929C14.6805 123.538 14.0474 123.538 13.6568 123.929L7.99999 129.586L2.34314 123.929C1.95262 123.538 1.31945 123.538 0.928927 123.929C0.538402 124.319 0.538402 124.953 0.928927 125.343L7.29289 131.707ZM7 -4.37114e-08L6.99999 131L8.99999 131L9 4.37114e-08L7 -4.37114e-08Z"
+                fill="black" />
+        </svg>
+    </section>
+    <!--second section-->
+    <section class="more-info">
+        <!-- first content-->
+        <div class="feature">
+            <div class="content">
+                <p class="title">
+                 Comfort
+                </p>
+                <p class="descrp">
+                    A shoes that is built to give comfort.
+                </p>
+                <img src="/images/craig-player.jpg" alt="craig-player">
+            </div>
+        </div>
+        <!-- second content-->
+        <div class="feature left">
+            <div class="content">
+                <p class="title">
+                    Flexibility
+                </p>
+                <p class="descrp">Soft, flexible soles will allow the walker to push off easly with each step.
+                </p>
+                <img src="/images/cycle-player.jpg" alt="cycle-player">
+            </div>
+        </div>
+        <!-- third content-->
+        <div class="feature">
+            <div class="content">
+                <p class="title">
+                    Durability
+                </p>
+                <p class="descrp">Lightweight, woven material is durable and provide structure and support.
+                </p>
+                <img src="/images/grailify-player.jpg" alt="luis-sneaker">
+            </div>
+        </div>
+    
+        <!--foruth content-->
+        <div class="feature">
+            <div class="content">
+                <p class="title">
+                    Athletic
+                </p>
+                <p class="descrp">
+                    Very decent for every game to fit in 
+                    Gym, sport and fitness.
+                </p>
+                <img src="/images/white-player.jpg" alt="pair-sneaker">
+            </div>
+        </div>
+    </section>
+    <footer>
+            <section>
+                <div class="social">
+                    <ul class="links">
+                    <li class="facebook">
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li class="linkdn">
+                        <a href="#">LinkedIn</a>
+                    </li><li class="ig">
+                        <a href="#">Instagram</a>
+                    </li>
+                    </ul>
+                </div>
+            </section>
+    
+            <div class="copywrite">
+                <p class="copy">
+                    <span>Adnan Adil</span> all rights reseverd &copy; 2022
+                </p>
+            </div>
+        </footer>
+    
+    <script>
+        const menu = document.querySelector('svg.menu');
+        const close = document.querySelector('svg.close');
+        const nav = document.querySelector('nav');
+
+        menu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+        })
+
+        close.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
+        })
+    </script>
+</body>
+</html>
